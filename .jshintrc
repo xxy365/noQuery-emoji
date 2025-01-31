@@ -1,0 +1,43 @@
+{
+  // 禁止使用位运算符（如 &, |, ^ 等）。如果你的项目中确实需要使用这些运算符，可以将其设置为 false。
+  "bitwise": true,
+  // 启用浏览器环境下的全局变量（如 window, document 等）。这对于前端开发非常有用。
+  "browser": true,
+  // 强制使用严格相等运算符（=== 和 !==）而不是宽松相等运算符（== 和 !=）。这有助于避免类型转换带来的潜在问题。
+  "eqeqeq": true,
+  // 要求在 for...in 循环中过滤原型链上的属性。即在 for...in 循环中添加 if (Object.prototype.hasOwnProperty.call(obj, key)) 这样的检查。
+  "forin": true,
+  // 允许修改冻结对象（通过 Object.freeze() 方法冻结的对象）。如果设置为 true，则会禁止这种操作。
+  "freeze": false,
+  // 设置缩进为 2 个空格。这是常见的缩进规范之一。
+  "indent": 2,
+  // 限制函数或块的最大嵌套深度为 6 层。超过这个层数会触发警告。
+  "maxdepth": 6,
+  // 限制函数参数的最大数量为 6 个。超过这个数量会触发警告。
+  "maxparams": 6,
+  // 限制函数内的最大语句数为 150 条。超过这个数量会触发警告。
+  "maxstatements": 150,
+  // 要求构造函数调用时必须使用 new 关键字。例如，new MyClass() 而不是 MyClass()。
+  "newcap": true,
+  // 禁止使用 arguments.caller 和 arguments.callee。这两个属性在现代 JavaScript 中已经被弃用。
+  "noarg": true,
+  // 禁止使用空代码块（即 {}）。这可以帮助避免意外的逻辑错误。
+  "noempty": true,
+  // 禁止使用不可见的非断空字符（No-Break Space）。这些字符可能会导致难以调试的问题。
+  "nonbsp": true,
+  // 禁止不必要的构造函数调用（即没有赋值给变量的构造函数调用）。例如，new MyClass(); 应该改为 const instance = new MyClass();。
+  "nonew": true,
+  // 强制使用单引号而不是双引号来包裹字符串。这有助于保持代码的一致性。
+  "quotmark": "single",
+  // 禁止行尾空格。行尾空格不仅浪费空间，还可能导致版本控制系统中的不必要更改。
+  "trailing": true,
+  // 禁止立即执行函数表达式（IIFE）未被括号包裹。例如，(function() { ... })(); 是正确的写法。
+  "immed": true,
+  // 允许在循环体内定义函数。默认情况下，JSHint 不允许这样做，因为可能会导致闭包问题。
+  "loopfunc": true,
+  "esnext": true,  // 支持 ES6 及更高版本
+  "globals": {
+        "$": false,
+        "DOMQuery": false
+    }
+}
