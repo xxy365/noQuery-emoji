@@ -1,7 +1,7 @@
 # noQuery-emoji
 让文本框或可编辑div具备插入表情功能。  
 Let textarea or editable div has ability to insert emoji.
-[demo](https://xxy.github.io/noQuery-emoji/)
+[demo](https://xxy365.github.io/noQuery-emoji/index.html)
 
 ## 预览 Preview
 ![image](https://s3.bmp.ovh/imgs/2025/01/31/9410b04203bea983.png)
